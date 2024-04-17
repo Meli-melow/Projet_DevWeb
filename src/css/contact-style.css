@@ -1,0 +1,158 @@
+body {
+    background-color: white;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    top: 200px;
+}
+
+.formulaire{
+    display: block;
+    margin-top: 80px;
+}
+
+h1 {
+    padding: 50px;
+    padding: 100px;
+    padding-bottom: 1px;
+    text-align : center;
+}
+
+h2 {
+    color:white;
+    margin-right: 30px;
+    background: linear-gradient(#09376d,#0d55a6);
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    margin-bottom: 0px;
+    padding: 25px;
+    text-align : center;
+    width: 680px;
+}
+
+form {
+    background:linear-gradient(#95b4d9,#6092cd);
+    /*À afficher*/
+    border: 2px #0d55a6;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    height:auto;
+    max-width: 1000px; /* Largeur maximale du formulaire */
+    margin: 0 auto; /* Centre le formulaire horizontalement */
+    margin-bottom: 700px;
+    padding: 1em;
+    width: 800px;
+}
+
+
+form > label, form > input, form > p, select, textarea {
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+form > input[type="text"] {
+    padding-left: 5px;
+}
+
+form > label, span{
+    display: inline-block; /* Aligner les uns sous des autres */
+    width: 160px;
+    text-align: right; /* Aligner le texte des labels à droite */
+    margin-right: 10px; /* Marge entre les labels et les champs */
+}
+
+form > input, textarea {
+    background: linear-gradient(rgba(183, 187, 192, 0.89), #959fab);
+}
+
+input[type="date"],input[type="radio"] {
+    margin-bottom: 25px;
+}
+
+span{
+    margin-left: 20px;
+}
+
+select {
+    margin-bottom: 20px;
+    width: 250px
+}
+
+label[for="f"], label[for="h"], label[for="x"] {
+    width: 50px;
+}
+
+
+#contact, input[type="text"], #mail, textarea {
+    width: 300px;
+    margin-bottom: 30px; /* Marge entre les champs */
+}
+
+input[type="text"], input[type="date"], select, #envoi {
+    border-radius: 5px;  /* Bordures arrondies */
+    border-width: 1px;
+}
+
+textarea {
+    vertical-align: top; /* Alignement vertical */
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+#envoi {
+    background: linear-gradient(#0d55a6,#11437e);
+    color: white;
+    height: 30px;
+    width: 60px;
+    margin-top: 15px;
+}
+
+footer {
+    background-color: #205a9f;
+    height: 330px;
+}
+
+
+
+
+/* Gérer les saisies invalides */
+
+form > p {
+    width: 500px;
+    margin-bottom: px;
+    text-align: center;
+    margin-left: 50px;
+    display:none;
+}
+
+.alert-date {
+    margin-left: 30px;
+}
+
+.alert-nom{
+    margin-left: 215px;
+}
+
+.alert-mail {
+    margin-left: 30px;
+}
+
+.alert-genre {
+    margin-left: 30px;
+}
+
+.alert-birth {
+    margin-left: 3px;
+}
+
+.alert-metier {
+    margin-left: 30px;
+}
+
+.alert-sujet {
+    margin-left: 30px;
+}
+
+.alert-message {
+    margin-left: 30px;
+}
