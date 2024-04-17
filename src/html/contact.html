@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Formulaire de contact CY PC-Play</title>
+    <link rel="stylesheet" href="contact-style.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="homepage-style.css">
+    <link rel="stylesheet" href="navbar-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- <script type="text/javascript" src="form.js"></script> -->
+    <script src="/src/form2.js"></script>
+</head>
+
+
+<body>
+    <!--En-tête-->
+
+    <div class="top-bar">
+        <div class="left">
+            <img id="cy-logo" src="cy-logo-white.png" >
+            <p id="cy-play-logo-Text">PLAY</p>
+        </div>
+        <div class="center">
+                <input id="search-box" type="search" placeholder="Search...">
+                <button id="search-button" type="submit">
+                    <img id="search-icon" src="search-icon.png" alt="">
+                </button>
+            
+        </div>
+        <div class="right">
+            <button class="basket-button">
+                &#128722;
+            </button>
+
+            <div class="account-div">
+                <button id="account-button">
+                    <img id="profile-picture" src="profileicon.webp" alt="">
+                </button>
+                <p id="account-name">My-name</p>
+            </div>
+            
+            
+            
+        </div>
+    </div>
+    
+    <!-- Placeholder for horizontal navigation -->
+    <nav class="horizontal-nav">
+    </nav>
+
+    <!-- Vertical navigation menu with titles -->
+    <aside class="vertical-nav">
+        <h2 id="h-in-vertical-nav">CY PLAY</h2>
+        <h3 id="h-in-vertical-nav">Accueil</h3>
+
+    <div class="left-side">
+        <ul id="nav">
+        	<li class="nav-link">
+        		<h1  class="navigation-h1" data-name="acceuil">Home</h1>
+        	</li>
+        	<li class="nav-link">
+        		<h1 class="navigation-h1" data-name="About">About</h1>
+        	</li>
+        	<li class="nav-link">
+        		<h1 class="navigation-h1" data-name="contact">contact</h1>
+        	</li>
+        </ul>
+    </div>
+
+    <!-- Formulaire de contact -->
+
+        <!--Corps du formulaire-->
+        <div class="formulaire">
+            <main>
+                <h1>Des questions PC gaming ? <br>CY Play vous écoute!</h1><br><br>
+                <h2>Veuillez compléter ici</h2>
+                <form name="check" action="" method="post" onsubmit="return validForm()">
+                    
+                    <label for="contact">Date de contact :</label>
+                    <input id="contact" type="date" name="box" value="jj/mm/aaaa">
+                    <p class="alert-date">Renseigner svp</p><br>
+                    
+                    <label for="nom">Nom :</label>
+                    <input id="nom" type="text" name="box" value="Votre Nom" onclick="return typeText()">
+                    <p class="alert-nom">Commencez par une majuscule puis au moins une minuscule</p><br>
+                    
+                    <label for="prenom">Prénom :</label>
+                    
+                    <input id="prenom" class="box" type="text" name="leprenom" value="Votre Prénom" onclick="return typeText()">
+                    <p class="alert-prenom" name="alert">Comme pour le nom</p><br>
+                    
+                    <label for="mail">Email :</label>
+                    
+                    <input id="mail" class="box" type="text" name="lenom" value="Votre email" onclick="return typeText()">
+                    <p class="alert-mail" name="alert">Renseigner svp</p><br>
+                    
+                    <span>Genre :</span>
+                    <input id="f" type="radio" name="genre" value="Femme">
+                    <label for="f">Femme</label>
+                    <input id="h" type="radio" name="genre" value="Homme">
+                    <label for="h">Homme</label>
+                    <input id="x" type="radio" name="genre" value="Autre">
+                    <label for="x">Autre</label>
+                    <p class="alert-genre" name="alert">Renseigner svp</p>
+                    <br>
+                    
+                    <label for="naissance">Date de naissance :</label>
+                    
+                    <input id="naissance" class="box" type="date" name="lanaissance" value="jj/mm/aaaa">
+                    <p class="alert-birth" name="lanaissance">Birth svp</p><br>
+                    
+                    <label for="fonction">Fonction :</label>
+                    <select id="fonction" name="metier">
+                        <option value="Particulier">Particulier</option>
+                        <option value="Pro Gamer">Pro Gamer</option>
+                        <option value="Fournisseur">Fournisseur</option>
+                        <!--Rajouter un choix 'Autre' + Préciser-->
+                    </select>
+                    <p class="alert-metier" name="alert">Renseigner svp</p>
+                    <br>
+                    
+                    <label for="sujet">Sujet :</label>
+                    
+                    <input id="sujet" class="box" type="text" name="box" value="Nom du sujet" onclick="return typeSujet()">
+                    <p class="alert-sujet" name="lesujet">Renseigner svp</p><br>
+                    
+                    <label for="message"><br>Contenu :</label>
+                    
+                    <textarea id="message" class="box" name="box" rows="15" value="Écrivez ici votre message"> Écrivez ici votre message</textarea>
+                    <p class="alert-message" name="lemessage">Renseigner svp</p><br>
+                    
+                    <center><input id="envoi" type="submit" value="Envoyer"></center>
+                </form>
+                
+            </main>
+        </div>
+    </div>
+    <!-- Footer -->
+     <!-- Footer with contact info and copyright -->
+     <footer>
+        <p>Call our service team on 03.22.84.65.74 to place an order</p>
+        <p>Copyright © CY Play</p>
+        <p>Webmaster CY Tech</p>
+    </footer>
+
+</body>
+</html>
